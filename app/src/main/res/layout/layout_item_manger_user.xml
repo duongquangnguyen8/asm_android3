@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:layout_marginTop="20dp"
+    android:paddingBottom="10dp"
+    android:background="@drawable/custom_search"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tviduser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id: sfđsfsd"
+            android:textSize="20sp"
+            android:textColor="#EF0303"/>
+        <TextView
+            android:id="@+id/tvEmailUser"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tviduser"
+            android:layout_height="wrap_content"
+            android:text="Email: duongnqph50030@gmail.com"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvNameUser"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvEmailUser"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Email: duongnqph50030@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvAddressUser"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvNameUser"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Email: duongnqph50030@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvPhoneNumberUser"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvAddressUser"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Email: duongnqph50030@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvBirthUser"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvPhoneNumberUser"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Email: duongnqph50030@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvRoleUser"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvBirthUser"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Vai trò: người dùng"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvCreatedAtUser"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tvRoleUser"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Email: duongnqph50030@gmail.com"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="220dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/custom_product">
+    <ImageView
+
+        android:id="@+id/imgProduct_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/milktea_2_banner"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/imgFavoriteProduct_item"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/icon_favorite_1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/tvNameProduct_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgProduct_item"
+            android:text="Trà sữa chân châu đường đen"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#070707"
+            android:textSize="16sp"
+            android:layout_marginTop="-10dp"/>
+        <TextView
+            android:id="@+id/tvPriceProduct_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25000đ"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:layout_below="@id/tvNameProduct_item"
+            android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

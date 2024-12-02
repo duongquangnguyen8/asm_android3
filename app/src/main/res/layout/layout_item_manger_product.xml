@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FavoriteFragment">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#F4EBEB">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_product_detail">
+
+            <ImageView
+                android:id="@+id/imgPrduct_mager"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/strawberry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="80dp"
+            android:layout_toStartOf="@+id/imgDeleteProduct_manger"
+            android:layout_toEndOf="@+id/relativeLayout">
+
+            <TextView
+                android:id="@+id/tvNameProduct_manger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Strawberrdddy"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPriceProduct_manger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvNameProduct_manger"
+                android:text="$5/1kg"
+                android:textColor="#F60A0A"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgDeleteProduct_manger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/icon_delete"/>
+
+        <ImageView
+            android:id="@+id/imgUpdateProduct_manger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toStartOf="@+id/imgDeleteProduct_manger"
+            android:layout_toLeftOf="@+id/imgDeleteProduct_manger"
+            android:src="@drawable/icon_pen_2" />
+    </RelativeLayout>
+</RelativeLayout>

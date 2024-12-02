@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_product">Talking about delicious strawberries, we cannot ignore Korean strawberries, one of the types of strawberries that is currently very popular not only in our market but also in other countries.</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">open</string>
+
+</resources>

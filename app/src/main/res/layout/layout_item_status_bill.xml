@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#F4EBEB"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgProduct_status_order"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/strawberry"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgProduct_status_order"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameProduct_status_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strawberry"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPriceProduct_status_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$5/1kg"
+                android:textColor="#F60A0A"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel Order"
+                android:textColor="#03A9F4" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="Xem chi tiết"
+            android:textSize="16dp"
+            android:textColor="#03A9F4"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvQuantity_status_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDetail"
+            android:layout_marginTop="10dp"
+            android:text="x2"
+            android:textSize="16dp"
+            android:layout_alignEnd="@id/tvDetail"/>
+        <TextView
+            android:id="@+id/tvTotalPrice_status_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#F60A0A"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvQuantity_status_order"
+            android:text="Thành tiên: 50000đ"/>
+    </RelativeLayout>
+
+</RelativeLayout>

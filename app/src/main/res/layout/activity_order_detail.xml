@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.OrderDetailActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar_order_detail"
+        android:background="@color/bluee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBack_Order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt hàng"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="25dp"/>
+    </Toolbar>
+    <RelativeLayout
+        android:id="@+id/containerAddress_detail"
+        android:background="#E6DEDE"
+        android:layout_margin="10dp"
+        android:layout_below="@id/toolbar_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ nhận hàng:" />
+        <TextView
+            android:id="@+id/tvShippingName"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_below="@+id/tv2"
+            android:layout_height="wrap_content"
+            android:text="Quang Dương"/>
+        <TextView
+            android:id="@+id/tvShippingPhone"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/tvShippingName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0865968291"/>
+        <TextView
+            android:id="@+id/tvShippingAddress"
+            android:layout_below="@+id/tvShippingPhone"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canh Nậu-Thạch Thất-Hà Nội"/>
+        <TextView
+            android:text=">"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:textColor="#8B8787"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_product_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/containerAddress_detail"
+        android:layout_marginTop="10dp"
+        android:background="#F4EBEB"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgProduct_order_detail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/custom_product_detail"
+            android:src="@drawable/strawberry" />
+
+        <TextView
+            android:id="@+id/tvNameProduct_Order_detail"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgProduct_order_detail"
+            android:layout_marginLeft="20dp"
+            android:text="Strawy"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPriceProduct_cart_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameProduct_Order_detail"
+            android:layout_alignStart="@id/tvNameProduct_Order_detail"
+            android:text="$5/1kg"
+            android:textColor="#F60A0A"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvQuantity_order_detail"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="x2"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_product_cart"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#F4EBEB"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgBill"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/icon_manger_2" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgBill"
+            android:layout_marginLeft="10dp"
+            android:text="Chi tiết hoá đơn"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBill"
+            android:layout_alignStart="@id/imgBill"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/imgBill"
+            android:text="Tổng tiền hàng"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tvha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvhi"
+            android:layout_alignStart="@id/imgBill"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/imgBill"
+            android:text="Tổng thanh toán"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tvTotalPrice_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBill"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:text="50000đ"/>
+        <TextView
+            android:id="@+id/tvTotalPriceAll_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTotalPrice_detail"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:text="50000đ"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <Button
+            android:id="@+id/btnOrderAll_detail"
+            android:layout_width="wrap_content"
+            android:text="Đặt hàng"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#FF5722"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_toStartOf="@+id/btnOrderAll_detail"
+            android:text="Tổng thanh toán"
+            android:textColor="#141313"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tvTotalPrice_order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/tv1"
+            android:layout_below="@id/tv1"
+            android:textColor="#EF0505"
+            android:text="15000đ"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+</RelativeLayout>

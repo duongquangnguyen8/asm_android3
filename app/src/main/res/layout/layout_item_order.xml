@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_product_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:background="#F4EBEB"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgProduct_order"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/custom_product_detail"
+            android:src="@drawable/strawberry" />
+
+        <TextView
+            android:id="@+id/tvNameProduct_Order"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgProduct_order"
+            android:layout_marginLeft="20dp"
+            android:text="Strawy"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPriceProduct_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNameProduct_Order"
+            android:layout_alignStart="@id/tvNameProduct_Order"
+            android:text="$5/1kg"
+            android:textColor="#F60A0A"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvQuantity_order"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="x2"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_product_cart"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#F4EBEB"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgBill"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/icon_manger_2" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgBill"
+            android:layout_marginLeft="10dp"
+            android:text="Chi tiết hoá đơn"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBill"
+            android:layout_alignStart="@id/imgBill"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/imgBill"
+            android:text="Tổng tiền hàng"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tvha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvhi"
+            android:layout_alignStart="@id/imgBill"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@id/imgBill"
+            android:text="Tổng thanh toán"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgBill"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:text="50000đ"/>
+        <TextView
+            android:id="@+id/tvTotalPriceAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTotalPrice"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:text="50000đ"/>
+
+    </RelativeLayout>
+</RelativeLayout>

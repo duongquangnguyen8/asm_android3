@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.OrderDetailActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar_order_detail"
+        android:background="@color/bluee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBackBillDetail_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoá đơn chi tiết"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:textSize="25dp"/>
+    </Toolbar>
+    <RelativeLayout
+        android:id="@+id/containerAddress_detail"
+        android:background="#E6DEDE"
+        android:layout_margin="10dp"
+        android:layout_below="@id/toolbar_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ nhận hàng:" />
+        <TextView
+            android:id="@+id/tvShippingName_manager"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:layout_below="@+id/tv2"
+            android:layout_height="wrap_content"
+            android:text="Quang Dương"/>
+        <TextView
+            android:id="@+id/tvShippingPhone_manager"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/tvShippingName_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0865968291"/>
+        <TextView
+            android:id="@+id/tvShippingAddress"
+            android:layout_below="@+id/tvShippingPhone_manager"
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canh Nậu-Thạch Thất-Hà Nội"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvBillDetail_manager"
+        android:layout_below="@+id/containerAddress_detail"
+        android:padding="20dp"
+        android:layout_above="@id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/l1"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tvTongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#F80707"
+            android:text="Tổng tiền"/>
+        <Spinner
+            android:id="@+id/spnstatusBillManger"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
